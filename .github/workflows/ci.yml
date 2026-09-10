@@ -1,8 +1,10 @@
 name: ci
 on:
   pull_request:
+    paths: ['ci-src/**']
   push:
     branches: [main]
+    paths: ['ci-src/**']
 jobs:
   check:
     runs-on: ubuntu-latest
